@@ -84,8 +84,11 @@ $this->registerJsFile(Yii::$app->request->baseUrl . '/js/control_main.js', ['dep
                         </ul>
                     </li>
                     <li class="dropdown user user-menu">
-                            <li><a href="#">Salir</a></li>
-
+                        <?= Html::a(
+                            'Salir',
+                            ['/site/logout'],
+                            ['data-method' => 'post']
+                        ) ?>
                     </li>
                 </ul>
             </div>

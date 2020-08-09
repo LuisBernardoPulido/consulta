@@ -22,7 +22,7 @@ $fieldOptions2 = [
 
 <div class="login-box">
     <div class="login-logo">
-        <a href="#" id="negritas"><b>SI</b>FOPE</a>
+        <a href="#" id="negritas"><b></b>MÓDULO DE CONSULTA </a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body login-box-back">
