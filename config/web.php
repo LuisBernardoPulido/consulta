@@ -131,7 +131,7 @@ $config = [
             'site/resetpass',
             'admin/*',
             'perfil-usuario/*',
-            'gii/*',
+            'consultas/*',
             'site/index',
             'unidades/upplistresenas',
             'unidades/upplist',
