@@ -90,7 +90,8 @@ class SiteController extends Controller
                 return Yii::$app->response->redirect(Url::toRoute(['site/login', 'show'=>1]));
             }
         }
-        return $this->render('index');
+        //return $this->render('index');
+        return $this->redirect('index.php?r=consultas/create');
     }
     public function actionMvz()
     {

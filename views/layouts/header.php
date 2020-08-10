@@ -28,20 +28,10 @@ $this->registerJsFile(Yii::$app->request->baseUrl . '/js/control_main.js', ['dep
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                 <ul class="nav navbar-nav">
+                    <!--
                     <li class="active"><a href="../web/index.php">Inicio <span class="sr-only">(current)</span></a></li>
 
-                    <li><a href="../web/index.php?r=consultas/create">Consulta</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opciones <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="../web/index.php?r=consultas/create">Generar reporte</a></li>
-                            <li><a href="#">Consulta</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Mi historial</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="../web/index.php?r=consultas/create">Consulta</a></li>-->
                 </ul>
 
             </div>
@@ -49,40 +39,7 @@ $this->registerJsFile(Yii::$app->request->baseUrl . '/js/control_main.js', ['dep
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <!-- Messages: style can be found in dropdown.less-->
-                    <li class="dropdown messages-menu">
-                        <!-- Menu toggle button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">Tienes 4 mensajes</li>
-                            <li>
-                                <!-- inner menu: contains the messages -->
-                                <ul class="menu">
-                                    <li><!-- start message -->
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <!-- User Image -->
 
-                                            </div>
-                                            <!-- Message title and timestamp -->
-                                            <h4>
-                                                Información
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                            </h4>
-
-                                            <p>Recuerda que puedes consultar ...</p>
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-                            <li class="footer"><a href="#">Ver todos los mensajes</a></li>
-                        </ul>
-                    </li>
                     <li class="dropdown user user-menu">
                         <?= Html::a(
                             'Salir',

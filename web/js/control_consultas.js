@@ -55,7 +55,8 @@ function buscararete(){
 function buscar(){
     var tipo = document.getElementById('consultas-p10_tipo').value;
     var valor = document.getElementById('consultas-p10_valor').value;
-
+    document.getElementById('arete').value = "";
+    document.getElementById('res').value = "";
     if(tipo==0){
         $.ajax({
             type: 'GET',
@@ -63,6 +64,7 @@ function buscar(){
             data: {"valor": valor},
             dataType: "json",
             success: function (res) {
+
                 if(res[0]!=""){
                     $( "#no" ).fadeOut( "fast", function() {
                         $( "#yes" ).fadeIn( "slow", function() {
@@ -71,6 +73,8 @@ function buscar(){
                                 document.getElementById('unidad').value = res[1];
                                 document.getElementById('cabezas').value = res[2];
                                 document.getElementById('id').value = res[3];
+
+
                             });
                         });
                     });
@@ -96,6 +100,7 @@ function buscar(){
             data: {"valor": valor},
             dataType: "json",
             success: function (res) {
+
                 if(res[0]!=""){
                     $( "#no" ).fadeOut( "fast", function() {
                         $( "#yes" ).fadeIn( "slow", function() {

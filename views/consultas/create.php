@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Consultas */
 
-$this->title = 'Consulta';
+$this->title = ' ';
 
 ?>
 <div class="consultas-create">
